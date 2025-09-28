@@ -129,10 +129,10 @@ span{
 }
 </style>
 </head>
-<body style="cursor: none;">
+<body>
 <div id="gameContainer">
 <div id="loadingContainer">
-<span id="progress">Quake Failed To Load!</span>
+<span id="progress">Quake</span>
 <button id="downloadButton" onclick="downloadQuakeData()">Download Quake</button>
 <div id="downloadStatus"></div>
 </div>
@@ -160,7 +160,7 @@ function checkGameDataExists() {
             var progressElement = document.getElementById('progress');
             if (response.ok && progressElement) {
                 // Game data exists, show loading message
-                progressElement.textContent = 'Quake Loading!';
+                progressElement.textContent = 'Quake';
             }
         })
         .catch(function() {
@@ -662,3 +662,4 @@ void main(void)
 </script>
 </body>
 </html>
+
