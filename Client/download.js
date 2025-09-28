@@ -10,7 +10,7 @@ window.downloadQuakeData = async function() {
         const response = await fetch("/api/download-quake", { method: "POST" });
         
         if (response.status === 200) {
-            status.innerHTML = "Download complete! Game will load on reload.";
+            status.innerHTML = "Download complete! Game will load automatically.";
             status.style.color = "#90EE90";
             
             // Update the progress text to show loading state
